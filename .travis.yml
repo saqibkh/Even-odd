@@ -9,7 +9,7 @@ before_install:
   - test -n $CC && unset CC
   install: make get-deps
  
-script:	./configure && make && make test
+script:	make
  sources:
             - ubuntu-toolchain-r-test
           packages:
