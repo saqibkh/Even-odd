@@ -1,18 +1,13 @@
 language: c
-
  os: linux
   dist: bionic
 compiler: 
 -clang
 -gcc
-before_install:
-  - test -n $CC && unset CC
-  install: make get-deps
- 
 script:	make
  sources:
             - ubuntu-toolchain-r-test
-          packages:
+ packages:
             - g++-5
-      env:
+  env:
          - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5"
