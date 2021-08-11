@@ -1,11 +1,13 @@
 language: c
+
+ os: linux
+  dist: bionic
 compiler: 
 -clang
 -gcc
 before_install:
   - test -n $CC && unset CC
   install: make get-deps
-  os: linux
-  dist: bionic
+ 
 script	./configure && make && make test
 
