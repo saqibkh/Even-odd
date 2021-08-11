@@ -1,8 +1,10 @@
 language: c
-install: make get-deps
-compiler: clang
+compiler: 
+-clang
+-gcc
 before_install:
   - test -n $CC && unset CC
+  install: make get-deps
   os: linux
   dist: xenial
 script: ./configure && make && make test
