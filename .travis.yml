@@ -7,4 +7,5 @@ before_install:
   install: make get-deps
   os: linux
   dist: bionic
+script	./configure && make && make test
 
