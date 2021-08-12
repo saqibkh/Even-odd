@@ -1,2 +1,2 @@
-all:
-    gcc Even-odd.c
+    all:    
+        gcc Even-odd.c
