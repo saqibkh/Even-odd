@@ -1,5 +1,4 @@
 language: C
-os: linux
 dist: bionic
 script:	
     - clang -coverage -O0 hello.c -o hello
