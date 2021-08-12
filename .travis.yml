@@ -1,5 +1,8 @@
 language: C
-dist: bionic
+dist: 
+    - bionic
+    - xenial
+    - trusty
 script:	
     - clang -coverage -O0 hello.c -o hello
     - ./hello
