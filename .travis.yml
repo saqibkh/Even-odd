@@ -1,9 +1,7 @@
 language: C
- os: linux
-  dist: bionic
-compiler: 
--clang
--gcc
-script:	gcc Even-odd.c && ./a.out
+script:	
+    - clang -coverage -O0 hello.c -o hello
+    - ./hello
+    - gcov hello.c
 
 
