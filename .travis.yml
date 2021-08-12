@@ -2,6 +2,6 @@ language: C
 script:	
     - clang -coverage -O0 hello.c -o hello
     - ./hello
-    - gcov hello.c
+    
 
 
