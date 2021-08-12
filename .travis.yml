@@ -4,6 +4,6 @@ language: C
 compiler: 
 -clang
 -gcc
-script:	make
+script:	gcc Even-odd.c && ./a.out
 
 
