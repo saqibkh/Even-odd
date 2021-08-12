@@ -3,6 +3,7 @@ dist:
     - bionic
     - xenial
     - trusty
+    - fedora
 script:	
     - clang -coverage -O0 hello.c -o hello
     - ./hello
