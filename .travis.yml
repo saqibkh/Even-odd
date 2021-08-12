@@ -1,4 +1,4 @@
-language: c
+language: C
  os: linux
   dist: bionic
 compiler: 
