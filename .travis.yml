@@ -3,7 +3,7 @@ script:
     - clang -coverage -O0 hello.c -o hello
     - ./hello
     os: linux
-    dist: bionic
+    dist: trusty
     
     
 
